@@ -81,3 +81,41 @@ elif age > 40 and age <=60:
 
 else :
     print("your age is over 60 right? %s " %(name))
+
+# sample of using for loop
+
+newword = "This a sample for 'for' loop "
+print("1st for loop will run............................................................")
+for i in range(0,len(newword)):
+    print(newword[i])
+print("2nd for loop will run............................................................")
+for i in range(0,len(newword)):
+    if newword[i] in "sample":
+        print(newword[i])
+print("3rd for loop will run............................................................")
+for i in ("first","Second","third","no more","problems"):
+    print("sample reached at {} state".format(i))
+print("4th for loop will run............................................................")
+for i in range(0,100,20):
+    print("value of i = {}" .format(i))
+print("5th for loop will run............................................................")
+for i in range(0,5):
+    for j in range(i,5):
+       print("*",end='')
+    print("")
+
+# code to calculate the length of each segment of an ip address
+ip = input("Enter the ip address ")
+segment =1
+segment_length = 0
+
+for char in ip:
+    if char == '.':
+        print("segment {} contains lenght of {} " .format(segment,segment_length))
+        segment +=1
+        segment_length=0
+    else:
+        segment_length += 1
+# This is to print last segment
+if char != ".":
+    print("segment {} contains length of {}" .format(segment,segment_length))
