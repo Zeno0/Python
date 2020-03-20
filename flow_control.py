@@ -119,3 +119,32 @@ for char in ip:
 # This is to print last segment
 if char != ".":
     print("segment {} contains length of {}" .format(segment,segment_length))
+
+# while loop examples 
+i = 0
+while i <10:
+    print('current i is {}' .format(i))
+    i +=1
+
+exit = ["1","2","3","4"]
+x = "0"
+while x not in exit:
+    x = input('Enter any number, which can be an exit ')
+print('Well, now are you Glad?')
+
+# game of guessing number using while and if else
+
+import random
+highest =20
+ans = random.randint(1,highest)
+guess = 0
+while guess != ans:
+    print("Guess the number between 1 and 20")
+    guess = int(input())
+    if guess > ans:
+        print("Buddy guess a little lower")
+    elif guess < ans:
+        print("Buddy guess a little higher")
+    else:
+        print("Buddy you got the correct answer, that is {} " .format(ans))
+        break
