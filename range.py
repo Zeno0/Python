@@ -1,0 +1,25 @@
+# creating and using range
+S_range_1 = range(1,100)
+random = range(0,1000000000000000)
+print(random)
+print(S_range_1)
+print(S_range_1.index(23))
+print(S_range_1.index(7) == 6)
+
+S_range_2 = range(7,10000,7)
+S_range_3 = random[7:10000:7]
+
+print( S_range_3 == range(7,10000,7))
+#print(list(S_range_2))
+print(S_range_3)
+x = int(input('Enter any number you wish under 10000 \n'))
+if x in S_range_2:
+    print(' NUmber you entered is divisible by 7')
+else:
+    print('not divisible by 7')
+print(list(S_range_2))
+print('#' * 50)
+
+for i in S_range_1:
+    print(i)
+
