@@ -1,6 +1,6 @@
 # creating and using range
 S_range_1 = range(1,100)
-random = range(0,1000000000000000)
+random = range(0,10000)
 print(random)
 print(S_range_1)
 print(S_range_1.index(23))
@@ -20,6 +20,16 @@ else:
 print(list(S_range_2))
 print('#' * 50)
 
-for i in S_range_1:
+for i in S_range_1[::-22]:
     print(i)
+sample = "test to check"
+print(sample[::2])  # it means that all 2nd index of string's character will be displayed
 
+p = range(0,100,5)
+o = p[::5]
+print(list(p))
+print(list(o))
+for i in p:
+    print(i)
+for i in o:
+    print(i)
