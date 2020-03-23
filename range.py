@@ -26,7 +26,7 @@ sample = "test to check"
 print(sample[::2])  # it means that all 2nd index of string's character will be displayed
 
 p = range(0,100,5)
-o = p[::5]
+o = p[::5]  # it means every 5th element will be in variable 'o'
 print(list(p))
 print(list(o))
 for i in p:
