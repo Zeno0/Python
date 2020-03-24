@@ -10,10 +10,11 @@ print(sample["#2key"])
 
 #deleting an entry
 del sample["#5key"]
-print(sample)
+print("Sample after deleting the last entry: {} ".format(sample))
 
+# to ask key from the user and returning them the value
 while True:
-    key = input("Enter what you want to search in sample")
+    key = input("Enter what you want to search in sample\n")
     if key == "quit":
         break
     if key in sample:
@@ -22,7 +23,7 @@ while True:
         print(val)
     else :
         print(key +" doesn't exist")
-
+# to ask key and value from the user to enter it in the sample dictionary
 while True:
     key =input("Enter the key you want to add\n")
     if key == "quit":
@@ -30,5 +31,6 @@ while True:
     val =input("enter coresponding value of the key\n")
     if key != "quit":
         sample[key]=val
-
+    print("\t above mentioned key and value added")
 print(sample)
+
