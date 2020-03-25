@@ -34,3 +34,30 @@ while True:
     print("\t above mentioned key and value added")
 print(sample)
 
+# using different methods of dictionaries
+for i in sample:
+    print(i,end=' ')
+    print("is key of value ",end='') 
+    print(sample[i])
+
+list_of_keys = sample.keys()
+print(list_of_keys)
+
+for i in sample.values():
+    print(i)
+
+print(sample.items())
+k = sample.keys()
+print(k)
+sample["#00key"] = "#00value"   # to check k variable will be updated or not
+print(k)
+
+# entering the dictionary into a tuple
+d_tuple = tuple(sample.items())
+print(d_tuple)
+print("now loop of tuple is running: ")
+for i in d_tuple:
+    k,v=i
+    print("{} is key of value - {}" .format(k,v))
+# now tuple to dictionary 
+print(dict(d_tuple))
