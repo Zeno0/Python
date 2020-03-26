@@ -1,5 +1,8 @@
 #creating and printing sample dictionary
-sample = {"#1key":"#1value","#2key":"#2value","#3key":"#3value","#4key":"#4value"}
+sample = {"#1key":"#1value",
+          "#2key":"#2value",
+          "#3key":"#3value",
+          "#4key":"#4value"}
 print("Printing the sample dictionary: {}".format(sample))
 
 #entering data into a dictionary
