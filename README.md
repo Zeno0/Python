@@ -29,6 +29,24 @@ using python in all aspects.
 ## challenge_dictionary_answer.py
  It is the solution of challenge_dictionary.txt. Please try it yourself, then look for the answer.
 
+## sets.py
+ In sets data is saved in double quotes("") and separated by a comma(,) and enclosed between curly braces({}) like a dictionary, but with no keys. Its functions and types of sets are explained.
+
+## IO_from_file.py
+ In this how to read from a .txt file is explained. It also explains how to manipulate the data of the .txt file.
+
+## write.py
+ In this .txt file is created by usingg list and tuple. Manipulating the file and printng the data efficiently from the file is explained.
+
+## binary.py
+ It tells about writing a binary file and reading from the binary file. 
+
+## picklesample.py
+ It explains about the pickle module of the python. It tells about creating a pickle file using list or tuple and reading efficiently from the pickle file. It is just like serialization in java.
+
+## shelvesample.py
+ It tells about shelve module of the python. It convertes data(list,dictionary,tuple) into the database. It explains about all the important function used by shelve to create database and use data from the database.
+
 
 
 
