@@ -52,8 +52,8 @@ print()
 # 'a' is used to append the data on the file again and again, each time you runs the code,
 # if you run  the following code 4 times then, there will be 4 times the same data on the file.
 # When we use 'w' it just write one times.
-    for i in range(1,11):
-with open("sample.txt",'a') as table:   
+for i in range(1,11):
+    with open("sample.txt",'a') as table:   
         for j in range(1,11):
             print("{0} times {1} is {2}" .format(i,j,i*j), file=table)
         print('',file=table)
