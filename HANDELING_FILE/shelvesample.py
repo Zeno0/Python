@@ -1,6 +1,6 @@
 import shelve
 
-with shelve.open("test") as anime:
+with shelve.open("HANDELING_FILE/test") as anime:
     anime["oregairu"] = "comedy,romance"
     anime["death note"] = "mystery,pyschological"
     anime["naruto"] = "adventute,action"
@@ -12,7 +12,7 @@ print(anime)
 
 print('-'*50)
 
-anime_1 = shelve.open("test2")
+anime_1 = shelve.open("HANDELING_FILE/test2")
 anime_1["oregairu"] = "comedy,romance"
 anime_1["death note"] = "mystery,pyschological"
 anime_1["naruto"] = "adventute,action"
@@ -44,10 +44,6 @@ print('-'*50)
 for i in anime_1.items():
     print(i)
 print(anime_1.items())
-
-
-
-
 anime_1.close()
 
 

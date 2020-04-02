@@ -1,5 +1,5 @@
 import shelve
-book = shelve.open("book_db")
+book = shelve.open("HANDELING_FILE/book_db")
 book["anime"] = {"DBZ" : ["Goku","vegeta","gohan"],
                  "oregairu" : ["hachiman","yukino","yui"],
                  "naruto" : ["naruto","sasuke","sakura"],
@@ -14,10 +14,10 @@ book.close()
 print('-'*50)
 
 # modifing the previous dictionary_challenge to use shelve
-locations = shelve.open('location')
-vocabulary = shelve.open('vocabulary')
+locations = shelve.open('HANDELING_FILE/location')
+vocabulary = shelve.open('HANDELING_FILE/vocabulary')
 
-loc = '1'
+loc = "1"
 while True:
     availableExits = ", ".join(locations[loc]["exits"].keys())
  

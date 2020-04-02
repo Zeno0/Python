@@ -7,7 +7,7 @@ oregairu = ["hachiman","yukino","yui"]
 naruto = ["naruto","sasuke","sakura"]
 eureka7 = ["eruka","holland","renton"]
 
-with shelve.open("anime",writeback=True) as anime:
+with shelve.open("HANDELING_FILE/anime",writeback=True) as anime:
     anime["DBZ"] = DBZ
     anime["oregairu"] = oregairu
     anime["naruto"] = naruto
