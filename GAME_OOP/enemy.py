@@ -18,7 +18,7 @@ class Enemy:
                 print("{0.name} lost a life".format(self))
             else:
                 print("{0.name} is dead " .format(self))
-                self.alive = False    
+                self.alive = False   
 
     def __str__(self):
         return "Name: {0.name}, Lives:{0.lives}, HP:{0.hit_points} " .format(self)

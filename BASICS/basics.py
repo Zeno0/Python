@@ -29,3 +29,8 @@ x = input('enter your name \n')
 print('hello '+x +'\n')
 
 
+# print("\f g")
+
+# print("\x g")
+
+# print("\u g")
